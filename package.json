@@ -1,0 +1,16 @@
+{
+  "name": "vue-reactive-query",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
