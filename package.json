@@ -1,16 +1,46 @@
 {
   "name": "vue-reactive-query",
   "version": "0.1.0",
+  "type": "module",
   "main": "dist/index.js",
-  "scripts": {
-    "build": "tsc"
-  },
+  "types": "dist/index.d.ts",
   "license": "ISC",
+  "homepage": "https://github.com/cjcarrick/vue-reactive-query",
+  "scripts": {
+    "build": "tsc",
+    "build:example": "vite build example",
+    "dev:example": "vite dev example",
+    "deploy:example": "gh-pages -d dist"
+  },
+  "repository": {
+    "url": "https://github.com/cjcarrick/vue-reactive-query",
+    "type": "git"
+  },
+  "keywords": [
+    "vue",
+    "vue router",
+    "query parameter",
+    "reactive query",
+    "reactive router",
+    "vue router ref"
+  ],
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "arrowParens": "avoid",
+    "printWidth": 80,
+    "proseWrap": "always"
+  },
   "dependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "prettier": "^2.8.4",
+    "vite": "^4.1.4",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vite-plugin-singlefile": "^0.13.3"
   }
 }
